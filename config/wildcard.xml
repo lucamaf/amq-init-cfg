@@ -1,0 +1,12 @@
+    <!--
+    The following configures wildcard syntax according to MQTT spec.
+    AMQ Docs: https://access.redhat.com/documentation/en-us/red_hat_amq/2021.q3/html-single/configuring_amq_broker/index#con-br-broker-wildcard-syntax_configuring
+    MQTT spec: http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html#_Toc398718106
+    -->
+    <wildcard-addresses>
+      <enabled>true</enabled>
+      <delimiter>/</delimiter>
+      <any-words>#</any-words>
+      <single-word>+</single-word>
+    </wildcard-addresses>
+  </core>
